@@ -1,0 +1,1 @@
+spring:%0A%20%20jpa%3A%0A%20%20%20%20hibernate%3A%0A%20%20%20%20%20%20ddl-auto%3A%20update%0Aserver%3A%0A%20%20port%3A%208080%0A
