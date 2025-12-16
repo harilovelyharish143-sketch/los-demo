@@ -4,21 +4,12 @@ WORKDIR /app
 
 RUN apk add --no-cache maven
 
-# Copy pom and download dependencies
 COPY pom.xml .
 RUN mvn dependency:go-offline
 
-# Copy source
 COPY src src
 
-# Build jar
 RUN mvn clean package -DskipTests
 
-# Show jar (for debug, safe to keep)
-RUN ls -l target
-
-EXPOSE 8080
-
-# IMPORTANT: use shell form so wildcard works
+# IMPORTANT: do NOT hardcode port
 CMD java -jar target/*.jar
-
