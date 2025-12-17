@@ -10,4 +10,10 @@ public class AuthController {
     public String login() {
         return "Login API working";
     }
+
+    @PostMapping("/register")
+    public String register() {
+        return "Register API working";
+    }
 }
+
