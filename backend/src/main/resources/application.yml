@@ -1,1 +1,0 @@
-server:%0A%20%20port%3A%20$%7BPORT%3A8080%7D%0A%0Aspring%3A%0A%20%20jpa%3A%0A%20%20%20%20hibernate%3A%0A%20%20%20%20%20%20ddl-auto%3A%20update%0A
