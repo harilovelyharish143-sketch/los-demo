@@ -1,4 +1,4 @@
-package com.los.demo.controller;
+package com.company.los;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -11,3 +11,4 @@ public class HealthController {
         return "LOS Backend is running successfully";
     }
 }
+
